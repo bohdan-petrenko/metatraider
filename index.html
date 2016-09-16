@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>metatrader</title>
+
+    <link rel="stylesheet" type="text/css" href="static/css/lib/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="static/css/lib/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" type="text/css" href="static/css/lib/bootstrap-select.css">
+    <link rel="stylesheet" type="text/css" href="static/css/lib/alertify.css">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script src="static/js/libs/jquery-3.1.0.js"></script>
+    <script src="static/js/libs/bootstrap.js"></script>
+    <script src="static/js/libs/moment-with-locales.js"></script>
+    <script src="static/js/libs/bootstrap-datetimepicker.js"></script>
+    <script src="static/js/libs/bootstrap-select.js"></script>
+    <script src="static/js/libs/alertify.js"></script>
+    <script src="static/js/main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row" style="padding-top: 15px;">
+            <div class="col-xs-3">
+                <select class="selectpicker" data-live-search="true" data-width="100%" id="currencies">
+                    <option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
+                    <option data-tokens="mustard">Burger, Shake and a Smile</option>
+                    <option data-tokens="frosting">Sugar, Spice and all things nice</option>
+                </select>
+            </div>
+            <div class="col-xs-3">
+                <div class='input-group date' id='from'>
+                    <input type='text' class="form-control" placeholder="from" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class='input-group date' id='to'>
+                    <input type='text' class="form-control" placeholder="to" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <button class="btn btn-block btn-primary" id="btn-load-history">LOAD HISTORY</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="chart-history" style="width: 100%; height: 80vh;"></div>
+</body>
+</html>
